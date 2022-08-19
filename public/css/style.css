@@ -61,6 +61,12 @@ ul {
 
 main {
   padding-top: 70px;
+  overflow: hidden;
+}
+
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .title-common {
@@ -104,6 +110,10 @@ main {
   font-size: 20px;
   -webkit-transform: translateY(10px);
           transform: translateY(10px);
+}
+
+.kv h1 br.xs-show {
+  display: none;
 }
 
 .kv p {
@@ -173,11 +183,11 @@ main {
   position: absolute;
   -webkit-animation: 2s ease-in-out infinite alternate;
           animation: 2s ease-in-out infinite alternate;
+  opacity: 0.8;
 }
 
 .kv_square-1 {
   width: 9.74vw;
-  opacity: 0.8;
   right: 11.51vw;
   top: 25vw;
   -webkit-animation-name: kvSquareLand1;
@@ -407,25 +417,25 @@ main {
 }
 
 .trouble_item-6 {
-  width: 6.88w;
+  width: 6.88vw;
   top: 12.21vw;
   left: 60.46vw;
 }
 
 .trouble_item-7 {
-  width: 8.44w;
+  width: 8.44vw;
   top: 21.99vw;
   left: 61.57vw;
 }
 
 .trouble_item-8 {
-  width: 13.65w;
+  width: 13.65vw;
   top: 47.04vw;
   left: 33.72vw;
 }
 
 .trouble_item-9 {
-  width: 9.01w;
+  width: 9.01vw;
   top: 39.6vw;
   left: 38.6vw;
 }
@@ -676,12 +686,182 @@ main {
   margin-bottom: 150px;
 }
 
+@media screen and (max-width: 1200px) {
+  .trouble_title h2 {
+    font-size: 40px;
+  }
+  .trouble_title h3 {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .trouble_title {
+    top: 27vw;
+  }
+  .trouble_title h2 {
+    font-size: 36px;
+  }
+  .trouble_title h3 {
+    font-size: 26px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .header {
     height: 60px;
   }
   .header_logo {
     width: 180px;
+  }
+  .kv h1 {
+    font-size: 32px;
+    line-height: 1.5;
+  }
+  .kv h2 {
+    margin-bottom: 15px;
+  }
+  .kv_square-1 {
+    width: 23.29vw;
+    top: 52.22vw;
+    right: -10.7vw;
+  }
+  .kv_square-2 {
+    width: 11.58vw;
+    top: -0.87vw;
+    right: -7.35vw;
+  }
+  .kv_square-3 {
+    display: none;
+  }
+  .kv_square-4 {
+    width: 7.1vw;
+    top: 20vw;
+    right: 20vw;
+  }
+  .kv_square-5 {
+    width: 3.36vw;
+    top: 15vw;
+    right: 30vw;
+  }
+  .kv_scrolldown {
+    margin-top: 30px;
+  }
+  .trouble {
+    padding-bottom: 245vw;
+    background-image: url(../img/trouble-bg-m.png);
+  }
+  .trouble_title {
+    top: 87vw;
+  }
+  .trouble_title h2 {
+    font-size: 56px;
+    background-image: url(../img/trouble-line-1-m.png), url(../img/trouble-line-2-m.png);
+    background-position: center 40%, center bottom;
+    background-size: 95%, 100%;
+    background-repeat: no-repeat;
+  }
+  .trouble_title h3 {
+    font-size: 36px;
+  }
+  .trouble_item-1 {
+    width: 38.48vw;
+    top: 34.19vw;
+    left: 7.58vw;
+  }
+  .trouble_item-2 {
+    width: 33vw;
+    top: 13.92vw;
+    left: 19.48vw;
+  }
+  .trouble_item-3 {
+    width: 12.33vw;
+    top: 43.58vw;
+    left: 48.21vw;
+  }
+  .trouble_item-4 {
+    width: 14.07vw;
+    top: 8.7vw;
+    left: 56.39vw;
+  }
+  .trouble_item-5 {
+    width: 24.78vw;
+    top: 61.98vw;
+    left: 36.8vw;
+  }
+  .trouble_item-6 {
+    width: 19.05vw;
+    top: 23.99vw;
+    left: 69.25vw;
+  }
+  .trouble_item-7 {
+    width: 23.16vw;
+    top: 53.5vw;
+    left: 66.52vw;
+  }
+  .trouble_item-8 {
+    width: 37.48vw;
+    top: 159.8vw;
+    left: 9.43vw;
+  }
+  .trouble_item-9 {
+    width: 24.66vw;
+    top: 134.15vw;
+    left: 18.19vw;
+  }
+  .trouble_item-10 {
+    width: 31vw;
+    top: 141.2vw;
+    left: 48.1vw;
+  }
+  .trouble_item-11 {
+    width: 38.36vw;
+    top: 175.96vw;
+    left: 51.3vw;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .kv {
+    padding-top: 20vw;
+  }
+  .kv_bg_main {
+    width: 59.53vw;
+  }
+  .kv_square-4 {
+    top: 36.59vw;
+    right: 41.49vw;
+  }
+  .kv_square-5 {
+    top: 30.78vw;
+    right: 50.29vw;
+  }
+  .kv h1 {
+    font-size: 28px;
+  }
+  .kv h2 {
+    font-size: 16px;
+  }
+  .trouble h2 {
+    font-size: 46px;
+  }
+  .trouble h3 {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .kv h1 br.xs-show {
+    display: block;
+  }
+  .kv_btn {
+    width: 200px;
+  }
+  .trouble h2 {
+    font-size: 36px;
+  }
+  .trouble h3 {
+    font-size: 22px;
   }
 }
 /*# sourceMappingURL=style.css.map */
