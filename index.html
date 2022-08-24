@@ -4,15 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CREATIVE SUPPORT pro.</title>
+    <title>クオリティ重視のデザイン定額制サービス　クリエィティブサポートPro.｜ブランジスタ</title>
+
+    <meta name="description" content="デザイン定額制サービス,バナー制作,LP（ランディングページ）制作,ウェブデザイン制作,DTP（紙媒体）デザイン,サイト更新・修正,イラスト制作,コーディング">
+    <meta property="og:locale" content="zh_TW" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="クオリティ重視のデザイン定額制サービス　クリエィティブサポートPro.｜ブランジスタ" />
+    <meta property="og:description" content="デザイン定額制サービス,バナー制作,LP（ランディングページ）制作,ウェブデザイン制作,DTP（紙媒体）デザイン,サイト更新・修正,イラスト制作,コーディング" />
+    <meta property="og:site_name" content="クオリティ重視のデザイン定額制サービス　クリエィティブサポートPro.｜ブランジスタ" />
+    <meta name="twitter:description" content="デザイン定額制サービス,バナー制作,LP（ランディングページ）制作,ウェブデザイン制作,DTP（紙媒体）デザイン,サイト更新・修正,イラスト制作,コーディング" />
+    <meta name="twitter:title" content="クオリティ重視のデザイン定額制サービス　クリエィティブサポートPro.｜ブランジスタ" />
+    <meta itemprop="name" content="クオリティ重視のデザイン定額制サービス　クリエィティブサポートPro.｜ブランジスタ">
+    <meta itemprop="description" content="デザイン定額制サービス,バナー制作,LP（ランディングページ）制作,ウェブデザイン制作,DTP（紙媒体）デザイン,サイト更新・修正,イラスト制作,コーディング">
+    <meta property="og:image" content="./public/img/share.png" />
+    <meta property="og:url" content="./public/img/share.png" />
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="./public/css/bootstrap/bootstrap.css">
-    <!-- <link rel="stylesheet" href="./public/css/aos/aos.css"> -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./public/css/aos/aos.css">
     <link rel="stylesheet" href="./public/css/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="./public/css/style.css">
 
@@ -33,10 +46,10 @@
             <img class="header_logo" src="./public/img/logo.png" alt="" data-aos="fade" data-aos-duration="500" data-aos-delay="1600">
             <nav class="header_nav d-md-block d-none">
                 <ul class="d-flex align-items-center">
-                    <li>サービス特徴</li>
-                    <li>実績</li>
-                    <li>サービスの流れ</li>
-                    <li>お問い合わせ</li>
+                    <li class="gotoelement" id="nav-feature" data-target="#feature">サービス特徴</li>
+                    <li class="gotoelement" id="nav-work" data-target="#work">実績</li>
+                    <li class="gotoelement" id="nav-flow" data-target="#flow">サービスの流れ</li>
+                    <li class="gotoelement" id="nav-contact" data-target="#contact">お問い合わせ</li>
                 </ul>
             </nav>
         </div>
@@ -68,7 +81,6 @@
                     <div data-aos="fade-up" data-aos-duration="300" data-aos-delay="500">リ</div>
                     <div data-aos="fade-up" data-aos-duration="300" data-aos-delay="550">テ</div>
                     <div data-aos="fade-up" data-aos-duration="300" data-aos-delay="600">ィ</div>
-                    <br class="xs-show">
                     <div data-aos="fade-up" data-aos-duration="300" data-aos-delay="650">が</div>
                     <div data-aos="fade-up" data-aos-duration="300" data-aos-delay="700">使</div>
                     <div data-aos="fade-up" data-aos-duration="300" data-aos-delay="750">い</div>
@@ -83,7 +95,6 @@
                     <div data-aos="fade-up" data-aos-duration="300" data-aos-delay="250">店</div>
                    
                     <div data-aos="fade-up" data-aos-duration="300" data-aos-delay="300">・</div>
-                    <br class="xs-show">
                     <div data-aos="fade-up" data-aos-duration="300" data-aos-delay="350">A</div>
                     <div data-aos="fade-up" data-aos-duration="300" data-aos-delay="400">S</div>
                     <div data-aos="fade-up" data-aos-duration="300" data-aos-delay="450">P</div>
@@ -98,19 +109,19 @@
                     <div data-aos="fade-up" data-aos-duration="300" data-aos-delay="850">ン</div>
                 </h1>
                 <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">※人月契約</p>
-                <a data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600" href=""><img class="kv_btn" src="./public/img/btn.png" alt=""></a>
+                <a class="gotoelement" data-target="#contact" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"><img class="kv_btn" src="./public/img/btn.png" alt=""></a>
                 <div class="d-flex align-items-center kv_brand" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="900">
                     <img src="./public/img/brand.png" alt="">
                     <span>東証プライムグループ企業</span>
                 </div>
-                <div class="kv_scrolldown">
+                <div class="kv_scrolldown gotoelement" data-target="#trouble">
                     <div class="kv_scrolldown_line"></div>
                     <span class="kv_scrolldown_text">Scroll down</span>
                 </div>
             </div>
         </div>
 
-        <div class="trouble">
+        <div class="trouble" id="trouble">
             <img class="trouble_bg-square d-md-block d-none" src="./public/img/trouble_bg-square.png" alt="">
             <div class="trouble_title">
                 <h3>
@@ -154,12 +165,12 @@
             </div>
         </div>
 
-        <div class="feature bg1">
+        <div class="feature bg1" id="feature">
             <div class="feature_title">
-                <h3 class="title-en">HOW TO SLOVE IT!</h3>
+                <h3 class="title-en">HOW TO <br>SLOVE IT!</h3>
                 <div class="feature_title_ch">
                     <h4>そのお悩み</h4>
-                    <h5>クリエイティブサポートpro.<span>が</span></h5>
+                    <h5>クリエイティブ<br>サポートpro.<span>が</span></h5>
                     <h2>課題を解決します!</h2>
                 </div>
             </div>
@@ -251,14 +262,14 @@
             </div>
         </div>
 
-        <div class="work">
-            <img class="kv_btn work_btn d-block mx-auto" src="./public/img/btn.png" alt="">
+        <img class="kv_btn work_btn d-block mx-auto gotoelement" data-target="#contact" src="./public/img/btn.png" alt="">
+        <div class="work" id="work">
             <div class="work_title">
                 <h3 class="title-en">WORKS</h3>
                 <h2 class="title-common">実績</h2>
             </div>
             <div class="work_content">
-                <div class="row">
+                <div class="row d-md-flex d-none">
                     <div class="col-md-4">
                         <div class="work_item" data-aos="fade-up" data-aos-duration="800">
                             <img src="./public/img/work-1.png" alt="">
@@ -302,16 +313,579 @@
                         </div>
                     </div>
                 </div>
-                <button class="btn-more">MORE...</button>
+                <div class="row d-md-none">
+                    <div class="col-6">
+                        <div class="work_item" data-aos="fade-up" data-aos-duration="800">
+                            <img src="./public/img/work-1.png" alt="">
+                            <p>食品関連サイト</p>
+                        </div>
+                        <div class="work_item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                            <img src="./public/img/work-3.png" alt="">
+                            <p>アパレル関連サイト</p>
+                        </div>
+                        <div class="work_item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">
+                            <img src="./public/img/work-5.png" alt="">
+                            <p>電器関連サイト</p>
+                        </div>
+                        <div class="work_item work_item-hide" data-aos-duration="800" data-aos-delay="800">
+                            <img src="./public/img/work-7.png" alt="">
+                            <p>インテリア関連サイト</p>
+                        </div>
+                        <div class="work_item work_item-hide" data-aos-duration="800" data-aos-delay="1000">
+                            <img src="./public/img/work-9.png" alt="">
+                            <p>アパレル関連サイト</p>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="work_item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+                            <img src="./public/img/work-2.png" alt="">
+                            <p>旅行関連サイト</p>
+                        </div>
+                        <div class="work_item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+                            <img src="./public/img/work-4.png" alt="">
+                            <p>車関連サイト</p>
+                        </div>
+                        <div class="work_item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
+                            <img src="./public/img/work-6.png" alt="">
+                            <p>食品関連サイト</p>
+                        </div>
+                        <div class="work_item work_item-hide" data-aos-duration="800" data-aos-delay="900">
+                            <img src="./public/img/work-8.png" alt="">
+                            <p>雑貨関連サイト</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="btn-more">MORE...</button>
+        </div>
+
+        <div class="customer">
+            <h2 class="title-common">お客様の声</h2>
+            <div class="customer_content">
+                <div class="swiper-container customer_swiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                          <div class="customer_item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                              <p>相談段階でゴールを明確に決めて、制作スタートしていただきました。作成するページもありきたりではなく、何となく他社とは違う感じがしました。クライアントの意向、「型を破りたい！」という気持ちに応えてくれました。</p>
+                              <div class="customer_name">
+                                  <div class="customer_name_line"></div>
+                                  <p>広告代理店 B社</p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="swiper-slide">
+                          <div class="customer_item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                              <p>技術力・実績・経験はもちろん必要なことですが、人柄や相性が重要だと感じています。<br>
+                                こんなやり方、見せ方があるんだって感心の連続でした。完成したページを自分で触って、クライアントに見てもらった時、デザインクオリティだけじゃなく、操作のしやすさや、見やすさを実感して、歓声が上がりました。
+                              </p>
+                              <div class="customer_name">
+                                  <div class="customer_name_line"></div>
+                                  <p>広告代理店 O社</p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="swiper-slide">
+                          <div class="customer_item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+                              <p>当社社員とも仲良くしてくれ、良い関係を築いてくださり感謝しています。真面目な話だけじゃなく、時には少し砕けた話も行い、コミュニケーションを重視してくれるので、納品物の意図ズレが無く常に良いものを納品していただいています。</p>
+                              <div class="customer_name">
+                                  <div class="customer_name_line"></div>
+                                  <p>ASP事業者 W社</p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="swiper-slide">
+                          <div class="customer_item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700">
+                              <p>とにかく早い。作業もですし、お返事のスピードも。こんなにレスポンスが早い企業さんは少ないと思います。やりたいことを実現するための課題、素材をご用意いただけるので、結果的に費用は安く抑えられています。品質が高く、スピード感があり、そして安い。とてもありがたいです。</p>
+                              <div class="customer_name">
+                                  <div class="customer_name_line"></div>
+                                  <p>広告代理店 M社</p>
+                              </div>
+                          </div>
+                      </div>
+                    </div>     
+                </div>
             </div>
         </div>
+
+        <div class="service">
+            <div class="service_content">
+                <div class="service_title">
+                    <img src="./public/img/service-title.png" alt="">
+                    <h2 class="title-common">対応可能業務</h2>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col-lg-3 col-4">
+                        <div class="service_item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                            <img src="./public/img/service-1.png" alt="">
+                            <p>キャンペーンページ制作</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-4">
+                        <div class="service_item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                            <img src="./public/img/service-2.png" alt="">
+                            <p>ランディングページ制作</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-4">
+                        <div class="service_item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                            <img src="./public/img/service-3.png" alt="">
+                            <p>各種バナー制作</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-4">
+                        <div class="service_item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                            <img src="./public/img/service-4.png" alt="">
+                            <p>TOPページ制作</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-4">
+                        <div class="service_item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+                            <img src="./public/img/service-5.png" alt="">
+                            <p>各種SNSページ制作</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-4">
+                        <div class="service_item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+                            <img src="./public/img/service-6.png" alt="">
+                            <p>DTP(チラシ等)制作</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-4">
+                        <div class="service_item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="650">
+                            <img src="./public/img/service-7.png" alt="">
+                            <p>イラスト制作</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-4">
+                        <div class="service_item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="550">
+                            <img src="./public/img/service-8.png" alt="">
+                            <p>営業資料制作</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-4">
+                        <div class="service_item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="450">
+                            <img src="./public/img/service-9.png" alt="">
+                            <p>更新・修正</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-4">
+                        <div class="service_item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="350">
+                            <img src="./public/img/service-10.png" alt="">
+                            <p>動画編集</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-4">
+                        <div class="service_item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="250">
+                            <img src="./public/img/service-11.png" alt="">
+                            <p>コーディング</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="150">
+                        <p class="service_other">その他…</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="flow" id="flow">
+            <h2 class="title-common">サービスの流れ</h2>
+            <div class="flow_content">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="flow_item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+                            <div class="flow_step">
+                                <span>STEP</span>
+                                <span>1</span>
+                            </div>
+                            <p>お問い合わせ</p>
+                            <img src="./public/img/flow-1.png" alt="">
+                            <img class="flow_btn gotoelement" data-target="#trouble" src="./public/img/btn.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="flow_item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                            <div class="flow_step">
+                                <span>STEP</span>
+                                <span>2</span>
+                            </div>
+                            <p>ヒアリング / ご提案</p>
+                            <img src="./public/img/flow-2.png" alt="">
+                            <span>
+                                課題に合わせて、<br>
+                                柔軟にご提案いたします。
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="flow_item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+                            <div class="flow_step">
+                                <span>STEP</span>
+                                <span>3</span>
+                            </div>
+                            <p>ご契約</p>
+                            <img src="./public/img/flow-3.png" alt=""> 
+                            <span>
+                                御社の課題解決の業務を<br>
+                                遂行させていただきます。
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="qa">
+            <div class="qa_content">
+                <div class="qa_title">
+                    <img src="./public/img/qa-title.png" alt="">
+                    <h2 class="title-common">よくある質問</h2>
+                </div>
+                <div>
+                    <div class="qa_item" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="0">
+                        <div class="qa_question d-flex align-items-center">
+                            <div class="qa_left">
+                                <div class="qa_question_square"></div>
+                            </div>
+                            <p>クオリティが心配なのですが、問題ないのでしょうか？</p>
+                            <div class="qa_right">
+                                <div class="bar hori"></div>
+                                <div class="bar vert"></div>
+                            </div>
+                        </div>
+                        <div class="qa_answer">
+                            <div class="d-flex align-items-center">
+                                <div class="qa_left"></div>
+                                <p>外注等には頼らず、全て社内のベテランデザイナー、コーダーが対応いたします。クオリティが私たちの強みです。</p>
+                                <div class="qa_right"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="qa_item" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="100">
+                        <div class="qa_question d-flex align-items-center">
+                            <div class="qa_left">
+                                <div class="qa_question_square"></div>
+                            </div>
+                            <p>作業依頼はどのように行うのですか?</p>
+                            <div class="qa_right">
+                                <div class="bar hori"></div>
+                                <div class="bar vert"></div>
+                            </div>
+                        </div>
+                        <div class="qa_answer">
+                            <div class="d-flex align-items-center">
+                                <div class="qa_left"></div>
+                                <p>メール、各種ツールでのやり取りとなります。WEB会議などでお打合せさせていただくことも可能です。</p>
+                                <div class="qa_right"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="qa_item" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
+                        <div class="qa_question d-flex align-items-center">
+                            <div class="qa_left">
+                                <div class="qa_question_square"></div>
+                            </div>
+                            <p>いままでデザイン依頼を出したことがないのですが、問題ないのでしょうか？</p>
+                            <div class="qa_right">
+                                <div class="bar hori"></div>
+                                <div class="bar vert"></div>
+                            </div>
+                        </div>
+                        <div class="qa_answer">
+                            <div class="d-flex align-items-center">
+                                <div class="qa_left"></div>
+                                <p>いままでデザイン依頼を出したことがないのですが、問題ないのでしょうか？</p>
+                                <div class="qa_right"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="qa_item" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
+                        <div class="qa_question d-flex align-items-center">
+                            <div class="qa_left">
+                                <div class="qa_question_square"></div>
+                            </div>
+                            <p>修正回数に上限はありますか？</p>
+                            <div class="qa_right">
+                                <div class="bar hori"></div>
+                                <div class="bar vert"></div>
+                            </div>
+                        </div>
+                        <div class="qa_answer">
+                            <div class="d-flex align-items-center">
+                                <div class="qa_left"></div>
+                                <p>修正回数に上限はありますか？</p>
+                                <div class="qa_right"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="qa_item" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400">
+                        <div class="qa_question d-flex align-items-center">
+                            <div class="qa_left">
+                                <div class="qa_question_square"></div>
+                            </div>
+                            <p>素材がないのですが、問題ないのでしょうか？</p>
+                            <div class="qa_right">
+                                <div class="bar hori"></div>
+                                <div class="bar vert"></div>
+                            </div>
+                        </div>
+                        <div class="qa_answer">
+                            <div class="d-flex align-items-center">
+                                <div class="qa_left"></div>
+                                <p>弊社でご希望のデザインに合うフリー素材のご提案をさせていただきます。ご希望で有料画像、写真撮影をお客様にご負担していただくことも可能です。</p>
+                                <div class="qa_right"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="qa_item" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500">
+                        <div class="qa_question d-flex align-items-center">
+                            <div class="qa_left">
+                                <div class="qa_question_square"></div>
+                            </div>
+                            <p>文言はどのように提供したらいいですか？</p>
+                            <div class="qa_right">
+                                <div class="bar hori"></div>
+                                <div class="bar vert"></div>
+                            </div>
+                        </div>
+                        <div class="qa_answer">
+                            <div class="d-flex align-items-center">
+                                <div class="qa_left"></div>
+                                <p>ワード、エクセル、パワーポイントで制作いただければ問題ありません。</p>
+                                <div class="qa_right"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="qa_item" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="600">
+                        <div class="qa_question d-flex align-items-center">
+                            <div class="qa_left">
+                                <div class="qa_question_square"></div>
+                            </div>
+                            <p>納品時にはどのようなデザインデータでいただけますか？</p>
+                            <div class="qa_right">
+                                <div class="bar hori"></div>
+                                <div class="bar vert"></div>
+                            </div>
+                        </div>
+                        <div class="qa_answer">
+                            <div class="d-flex align-items-center">
+                                <div class="qa_left"></div>
+                                <p>お客様のご要望に合わせて、指定データにて納品致します。ご要望がある場合は、可能な範囲でご対応させていただきます。</p>
+                                <div class="qa_right"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="qa_item" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="700">
+                        <div class="qa_question d-flex align-items-center">
+                            <div class="qa_left">
+                                <div class="qa_question_square"></div>
+                            </div>
+                            <p>毎月、同じ作業量を確実にこなしてもらえますか？</p>
+                            <div class="qa_right">
+                                <div class="bar hori"></div>
+                                <div class="bar vert"></div>
+                            </div>
+                        </div>
+                        <div class="qa_answer">
+                            <div class="d-flex align-items-center">
+                                <div class="qa_left"></div>
+                                <p>もちろん、問題ありません。回数を追うごとに作業効率が高まります。</p>
+                                <div class="qa_right"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="qa_item" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="800">
+                        <div class="qa_question d-flex align-items-center">
+                            <div class="qa_left">
+                                <div class="qa_question_square"></div>
+                            </div>
+                            <p>契約期間途中の解約はどうなりますか?</p>
+                            <div class="qa_right">
+                                <div class="bar hori"></div>
+                                <div class="bar vert"></div>
+                            </div>
+                        </div>
+                        <div class="qa_answer">
+                            <div class="d-flex align-items-center">
+                                <div class="qa_left"></div>
+                                <p>専用人員を確保させていただく為、契約期間途中の解約でも、契約期間分の料金が発生いたします。</p>
+                                <div class="qa_right"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="qa_item" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="900">
+                        <div class="qa_question d-flex align-items-center">
+                            <div class="qa_left">
+                                <div class="qa_question_square"></div>
+                            </div>
+                            <p>営業時間は？</p>
+                            <div class="qa_right">
+                                <div class="bar hori"></div>
+                                <div class="bar vert"></div>
+                            </div>
+                        </div>
+                        <div class="qa_answer">
+                            <div class="d-flex align-items-center">
+                                <div class="qa_left"></div>
+                                <p>土日祝日を除く、10:30〜19:30となっております。</p>
+                                <div class="qa_right"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="place">
+            <div class="place_content">
+                <h2 class="place_intro">
+                    各拠点から<span>日本全国</span>に対応可能！<br>
+                    貴社にお伺いしてお悩みを<br class="d-md-none">聞かせて頂きます！<br>
+                    お気軽にお問い合わせください!
+                </h2>
+                <p class="place_remark">※エリアによってはお電話にて対応させていただきます。</p>
+                <p class="place_time">受付時間　平日10:00～19:00（土・日・祝日を除く）</p>
+                <img src="./public/img/map.png" alt="">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="place_item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+                            <div class="place_item_title">北海道の企業様</div>
+                            <div class="place_item_content">
+                                <p class="place_item_inform">
+                                    〒060-0005<br>
+                                    北海道札幌市中央区北五条西2-5<br>
+                                    JRタワーオフィスプラザさっぽろ12F
+                                </p>
+                                <p class="place_item_phone">011-330-6810</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="place_item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                            <div class="place_item_title">東北・関東・甲信越の企業様</div>
+                            <div class="place_item_content">
+                                <p class="place_item_inform">
+                                    〒150-0031<br>
+                                    東京都渋谷区桜丘町20-4<br>
+                                    ネクシィーズスクエアビル
+                                </p>
+                                <p class="place_item_phone">03-5459-6531</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="place_item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                            <div class="place_item_title">東海・近畿・北陸・四国の企業様</div>
+                            <div class="place_item_content">
+                                <p class="place_item_inform">
+                                    〒550-0011<br>
+                                    大阪府大阪市西区阿波座1-3-15<br>
+                                    関電不動産西本町ビル11F
+                                </p>
+                                <p class="place_item_phone">06-7670-9460</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="place_item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+                            <div class="place_item_title">中国・九州・沖縄地方の企業様</div>
+                            <div class="place_item_content">
+                                <p class="place_item_inform">
+                                    〒812-0011<br>
+                                    福岡県福岡市博多区博多駅前1-9-3<br>
+                                    博多駅前シティビル6F
+                                </p>
+                                <p class="place_item_phone">092-686-6140</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="place_item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800">
+                            <div class="place_item_title">台湾法人ご紹介</div>
+                            <div class="place_item_content">
+                                <p class="place_item_inform">
+                                    〒104 台北市中山區復興北路150號12號之8
+                                </p>
+                                <p class="place_item_phone">886-2-2391-3991</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="place_time text-end">受付時間　平日10:00～19:00（土・日・祝日を除く）</p>
+            </div>
+        </div>
+
+        <div class="contact">
+            <div class="contact_inner" id="contact">
+                <div class="contact_title">
+                    <h3 class="title-en">CONTACT<br> US</h3>
+                    <h2 class="title-common">お問い合わせ</h2>
+                </div>
+                <form action="" class="contact_form">
+                    <div class="contact_form_item">
+                        <input class="contact_form_input" type="text">
+                        <div class="contact_form_placeholder">
+                            会社名<span>＊</span>
+                        </div>
+                    </div>
+                    <div class="contact_form_item">
+                        <input class="contact_form_input" type="text" placeholder="部署名">
+                    </div>
+                    <div class="contact_form_item">
+                        <input class="contact_form_input" type="text">
+                        <div class="contact_form_placeholder">
+                            お名前<span>＊</span>
+                        </div>
+                    </div>
+                    <div class="contact_form_item">
+                        <input class="contact_form_input" type="text">
+                        <div class="contact_form_placeholder">
+                            お名前フリガナ<span>＊</span>
+                        </div>
+                    </div>
+                    <div class="contact_form_item">
+                        <input class="contact_form_input" type="text">
+                        <div class="contact_form_placeholder">
+                            メールアドレス<span>＊</span>
+                        </div>
+                    </div>
+                    <div class="contact_form_item">
+                        <input class="contact_form_input" type="text" placeholder="お電話番号">
+                    </div>
+                    <div class="contact_form_item">
+                        <textarea class="contact_form_input textarea" name="" id="" cols="30" rows="10"></textarea>
+                        <div class="contact_form_placeholder">
+                            お問い合わせ内容<span>＊</span>
+                        </div>
+                    </div>
+                    <div class="contact_form_btn d-flex flex-wrap align-items-center justify-content-end">
+                        <span>＊印の項目は必須項目となります。</span>
+                        <input type="submit" value="送信する">
+                    </div>
+                </form>
+            </div>
+            <img class="contact_square square1 d-md-block d-none" src="./public/img/square-1.png" alt="">
+            <img class="contact_square square2 d-md-block d-none" src="./public/img/square-2.png" alt="">
+        </div>
     </main>
+
+    <footer class="footer">
+        <div class="container d-md-flex align-items-center justify-content-between">
+            <img src="./public/img/logo.png" alt="">
+            <nav class="footer_nav">
+                <ul class="d-md-flex align-items-center">
+                    <li class="gotoelement" data-target="#feature">サービス特徴</li>
+                    <li class="gotoelement" data-target="#work">実績</li>
+                    <li class="gotoelement" data-target="#flow">サービスの流れ</li>
+                    <li class="gotoelement" data-target="#contact">お問い合わせ</li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
     
     <script src="./public/js/jquery/jquery.min.js"></script>
     <script src="./public/js/bootstrap/bootstrap.bundle.min.js"></script>
     <script src="./public/js/swiper/swiper-bundle.min.js"></script>
-    <!-- <script src="./public/js/aos/aos.js"></script> -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./public/js/aos/aos.js"></script>
     <script src="./public/js/index.js"></script>
 </body>
 </html>
