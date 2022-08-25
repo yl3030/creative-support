@@ -9,6 +9,11 @@ ul {
   margin: 0;
 }
 
+p {
+  font-size: 16px;
+  line-height: 1.8;
+}
+
 .header {
   height: 70px;
   width: 100%;
@@ -96,7 +101,7 @@ main {
 }
 
 .kv h1 {
-  font-size: 36px;
+  font-size: 42px;
   font-weight: 600;
   line-height: 1.7;
   margin-bottom: 5px;
@@ -104,6 +109,7 @@ main {
 
 .kv h1 > div {
   display: inline-block;
+  letter-spacing: -0.1em;
 }
 
 .kv h1 small {
@@ -532,7 +538,7 @@ main {
 }
 
 .feature_itemBox {
-  padding: 350px 0 200px;
+  padding: 150px 0;
 }
 
 .feature_itemBox:nth-child(1) {
@@ -554,6 +560,10 @@ main {
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
           order: 1;
+}
+
+.feature_itemBox:last-child {
+  padding-bottom: 0;
 }
 
 .feature_itemBox#feat-expe .feature_item_pic img {
@@ -610,7 +620,7 @@ main {
 
 .feature_item_text p {
   font-size: 13px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.7;
 }
 
@@ -631,6 +641,7 @@ main {
   background-position: center top;
   background-repeat: no-repeat;
   background-size: 100%;
+  padding-top: 150px;
 }
 
 .work_title {
@@ -692,8 +703,8 @@ main {
 }
 
 .work_btn {
-  margin-bottom: 150px;
   margin-top: 100px;
+  width: 400px;
 }
 
 .work .btn-more {
@@ -842,7 +853,7 @@ main {
   margin-top: 250px;
   padding: 5.57vw 10.91vw 2.32vw;
   background-image: url(../img/flow-bg.png);
-  background-position: 0 bottom;
+  background-position: -40px bottom;
   background-size: 100%;
   background-repeat: no-repeat;
 }
@@ -854,6 +865,7 @@ main {
 .flow .title-common {
   margin-bottom: 3.57vw;
   color: #fff;
+  letter-spacing: 0;
 }
 
 .flow_item {
@@ -889,6 +901,11 @@ main {
   font-size: 14px;
 }
 
+.flow_item.flow2 img {
+  width: 50%;
+  margin: 5px auto;
+}
+
 .flow_step {
   background-color: #000;
   border-radius: 0 100px 100px 0;
@@ -903,8 +920,8 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  -webkit-transform: translate(-1px, -50%);
+          transform: translate(-1px, -50%);
   position: absolute;
   top: 0;
   left: 0;
@@ -1033,10 +1050,18 @@ main {
           transform: translate(-50%, -50%);
 }
 
+.qa_question p {
+  color: #2c2c2c;
+}
+
 .qa_answer {
   padding: 15px 0;
   border-top: 1px solid #bfbfbf;
   display: none;
+}
+
+.qa_answer p {
+  color: #000;
 }
 
 .qa_left, .qa_right {
@@ -1299,6 +1324,7 @@ main {
 @media screen and (max-width: 1500px) {
   .customer_item {
     height: 400px;
+    padding-top: 20px;
   }
 }
 
@@ -1656,6 +1682,7 @@ main {
     padding-bottom: 44vw;
   }
   .place {
+    padding-top: 45vw;
     background-image: url(../img/place-bg-top-m.png), url(../img/place-bg-bottom-m.png);
     background-size: 100%, 100%;
     background-position: center 0, center bottom;
@@ -1823,6 +1850,7 @@ main {
   }
   .place_intro {
     font-size: 24px;
+    margin-bottom: 35px;
   }
   .place_remark {
     font-size: 16px;
@@ -1914,12 +1942,6 @@ main {
     padding-left: 15px;
     padding-right: 15px;
   }
-  .kv h1 {
-    font-size: 20px;
-  }
-  .kv h1 br.xs-show {
-    display: block;
-  }
   .kv h2 {
     font-size: 14px;
     margin-bottom: 10px;
@@ -1960,7 +1982,7 @@ main {
     margin-bottom: 25px;
   }
   .place_intro {
-    font-size: 18px;
+    font-size: 22px;
   }
   .place_content {
     padding-left: 15px;
@@ -1974,6 +1996,18 @@ main {
   }
   .place_item_phone {
     font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .kv h1 {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .place_intro {
+    font-size: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */

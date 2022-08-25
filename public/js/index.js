@@ -7,31 +7,31 @@ $(window).on("scroll resize", function(){
         $(".header").removeClass("active");
     }
 
-    let atteTop = $("#feat-atte").offset().top;
-    let beloTop = $("#feat-belo").offset().top;
-    let workTop = $("#feat-work").offset().top;
-    if($(window).scrollTop()<=atteTop){
-        $(".feature").removeClass("bg2").addClass("bg1");
-    }else if ($(window).scrollTop()>atteTop && $(window).scrollTop()<=beloTop){
-        $(".feature").removeClass("bg1").addClass("bg2");
-    }else if ($(window).scrollTop()>beloTop && $(window).scrollTop()<=workTop){
-        $(".feature").removeClass("bg2").addClass("bg1");
-    }else if ($(window).scrollTop()>workTop){
-        $(".feature").removeClass("bg1").addClass("bg2");
-    }
+    // let atteTop = $("#feat-atte").offset().top;
+    // let beloTop = $("#feat-belo").offset().top;
+    // let workTop = $("#feat-work").offset().top;
+    // if($(window).scrollTop()<=atteTop){
+    //     $(".feature").removeClass("bg2").addClass("bg1");
+    // }else if ($(window).scrollTop()>atteTop && $(window).scrollTop()<=beloTop){
+    //     $(".feature").removeClass("bg1").addClass("bg2");
+    // }else if ($(window).scrollTop()>beloTop && $(window).scrollTop()<=workTop){
+    //     $(".feature").removeClass("bg2").addClass("bg1");
+    // }else if ($(window).scrollTop()>workTop){
+    //     $(".feature").removeClass("bg1").addClass("bg2");
+    // }
 
 
-    let featureTop = $("#feature").offset().top - 70;
-    let featureBottom = $("#feature").offset().top + $("#feature").height();
+    let featureTop = $("#feature").offset().top - 71;
+    let featureBottom = featureTop + $("#feature").height();
 
-    let worksTop = $("#work").offset().top - 70;
-    let worksBottom = $("#work").offset().top + $("#work").height();
+    let worksTop = $("#work").offset().top - 71;
+    let worksBottom = worksTop + $("#work").height();
 
-    let flowTop = $("#flow").offset().top - 70;
-    let flowBottom = $("#flow").offset().top + $("#flow").height();
+    let flowTop = $("#flow").offset().top - 71;
+    let flowBottom = flowTop + $("#flow").height();
 
-    let contactTop = $("#contact").offset().top - 70;
-    let contactBottom = $("#contact").offset().top + $("#contact").height();
+    let contactTop = $("#contact").offset().top - 71;
+    let contactBottom = contactTop + $("#contact").height();
 
     if($(window).scrollTop()>=featureTop && $(window).scrollTop()<featureBottom){
         $("#nav-feature").addClass("active").siblings(".gotoelement").removeClass("active");
@@ -44,10 +44,13 @@ $(window).on("scroll resize", function(){
     } else {
         $(".header_nav li").removeClass("active");
     }
+
+
 })
 
 $(".btn-more").click(function(){
     $(".work_item-hide").slideDown(300);
+    $(this).hide();
 })
 
 // contact
@@ -65,12 +68,14 @@ $(".contact_form_input").keyup(function(){
 var swiper = new Swiper(".customer_swiper", {
     slidesPerView: 1.2,
     spaceBetween: 20,
-    // loop: true,
-    // autoplay: {
-    //     delay: 3000,
-    //     disableOnInteraction: false,
-    // },
+    loop: true,
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
     speed: 800,
+    observeParents:true,
+    observer:true,
     breakpoints: {
         400: {
             slidesPerView: 1.5,
@@ -98,4 +103,5 @@ $(".gotoelement").click(function(){
     let target = $(this).data("target");
     let top = $(target).offset().top - 70;
     $("html, body").animate({scrollTop:top},300);
+    $(this).addClass("active");
 })
