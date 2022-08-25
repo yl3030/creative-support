@@ -42,13 +42,16 @@
 </head>
 <body>
     <header class="header">
-        <div class="container d-flex align-items-center justify-content-md-between justify-content-center">
+        <div class="container d-flex align-items-center justify-content-lg-between justify-content-center">
             <img class="header_logo" src="./public/img/logo.png" alt="" data-aos="fade" data-aos-duration="500" data-aos-delay="1600">
-            <nav class="header_nav d-md-block d-none">
+            <nav class="header_nav d-lg-block d-none">
                 <ul class="d-flex align-items-center">
                     <li class="gotoelement" id="nav-feature" data-target="#feature">サービス特徴</li>
                     <li class="gotoelement" id="nav-work" data-target="#work">実績</li>
+                    <li class="gotoelement" id="nav-customer" data-target="#customer">お客様の声</li>
+                    <li class="gotoelement" id="nav-service" data-target="#service">対応可能業務</li>
                     <li class="gotoelement" id="nav-flow" data-target="#flow">サービスの流れ</li>
+                    <li class="gotoelement" id="nav-qa" data-target="#qa">Q&A</li>
                     <li class="gotoelement" id="nav-contact" data-target="#contact">お問い合わせ</li>
                 </ul>
             </nav>
@@ -360,7 +363,7 @@
             <button class="btn-more">MORE...</button>
         </div>
 
-        <div class="customer">
+        <div class="customer" id="customer">
             <h2 class="title-common">お客様の声</h2>
             <div class="customer_content" data-aos="fade-up" data-aos-duration="1000">
                 <div class="swiper-container customer_swiper">
@@ -462,7 +465,7 @@
             </div>
         </div>
 
-        <div class="service">
+        <div class="service" id="service">
             <div class="service_content">
                 <div class="service_title">
                     <img src="./public/img/service-title.png" alt="">
@@ -589,7 +592,7 @@
             </div>
         </div>
 
-        <div class="qa">
+        <div class="qa" id="qa">
             <div class="qa_content">
                 <div class="qa_title">
                     <img src="./public/img/qa-title.png" alt="">

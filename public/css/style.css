@@ -1353,6 +1353,12 @@ main {
   .feature_title_ch h4 {
     font-size: 22px;
   }
+  .header_nav li {
+    font-size: 15px;
+  }
+  .header_logo {
+    width: 170px;
+  }
 }
 
 @media screen and (max-width: 1040px) {
@@ -1389,6 +1395,12 @@ main {
 }
 
 @media screen and (max-width: 991px) {
+  .header {
+    height: 60px;
+  }
+  .header_logo {
+    width: 180px;
+  }
   .trouble_title {
     top: 27vw;
   }
@@ -1424,12 +1436,6 @@ main {
 }
 
 @media screen and (max-width: 767px) {
-  .header {
-    height: 60px;
-  }
-  .header_logo {
-    width: 180px;
-  }
   .kv h1 {
     font-size: 32px;
     line-height: 1.5;
@@ -1627,7 +1633,7 @@ main {
     height: 88.13vw;
   }
   .service {
-    margin-top: 150px;
+    padding-top: 150px;
   }
   .service_content {
     padding: 0;

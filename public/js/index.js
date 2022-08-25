@@ -27,8 +27,17 @@ $(window).on("scroll resize", function(){
     let worksTop = $("#work").offset().top - 71;
     let worksBottom = worksTop + $("#work").height();
 
+    let customerTop = $("#customer").offset().top - 71;
+    let customerBottom = customerTop + $("#customer").height();
+
+    let serviceTop = $("#service").offset().top - 71;
+    let serviceBottom = serviceTop + $("#service").height();
+
     let flowTop = $("#flow").offset().top - 71;
     let flowBottom = flowTop + $("#flow").height();
+
+    let qaTop = $("#qa").offset().top - 71;
+    let qaBottom = qaTop + $("#qa").height();
 
     let contactTop = $("#contact").offset().top - 71;
     let contactBottom = contactTop + $("#contact").height();
@@ -37,8 +46,14 @@ $(window).on("scroll resize", function(){
         $("#nav-feature").addClass("active").siblings(".gotoelement").removeClass("active");
     } else if ($(window).scrollTop()>=worksTop && $(window).scrollTop()<worksBottom) {
         $("#nav-work").addClass("active").siblings(".gotoelement").removeClass("active");
+    } else if($(window).scrollTop()>=customerTop && $(window).scrollTop()<customerBottom) {
+        $("#nav-customer").addClass("active").siblings(".gotoelement").removeClass("active");
+    } else if($(window).scrollTop()>=serviceTop && $(window).scrollTop()<serviceBottom) {
+        $("#nav-service").addClass("active").siblings(".gotoelement").removeClass("active");
     } else if ($(window).scrollTop()>=flowTop && $(window).scrollTop()<flowBottom) {
         $("#nav-flow").addClass("active").siblings(".gotoelement").removeClass("active");
+    } else if($(window).scrollTop()>=qaTop && $(window).scrollTop()<qaBottom) {
+        $("#nav-qa").addClass("active").siblings(".gotoelement").removeClass("active");
     } else if ($(window).scrollTop()>=contactTop && $(window).scrollTop()<contactBottom) {
         $("#nav-contact").addClass("active").siblings(".gotoelement").removeClass("active");
     } else {
