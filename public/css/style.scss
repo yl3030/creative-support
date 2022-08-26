@@ -1172,6 +1172,20 @@ main {
             width: 170px;
         }
     }
+    .footer {
+        padding-bottom: 40px;
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+        &_nav {
+            margin-top: 40px;
+            li {
+                text-align: center;
+                margin: 0 0 15px;
+            }
+        }
+    }
 }
 
 @media screen and (max-width:1040px) {
@@ -1577,20 +1591,8 @@ main {
         }
     }
 
-    .footer {
-        padding-bottom: 40px;
-        img {
-            display: block;
-            margin: 0 auto;
-        }
-        &_nav {
-            margin-top: 40px;
-            li {
-                text-align: center;
-                margin: 0 0 15px;
-            }
-        }
-    }
+    
+
 }
 
 @media screen and (max-width:700px) {
