@@ -63,6 +63,45 @@ p {
     &.active {
         background-color: #fff;
     }
+    &_menu {
+        width: 23px;
+        height: 15px;
+        position: relative;
+        .bar {
+            width: 100%;
+            height: 2px;
+            background-color: #000;
+            position: absolute;
+            left: 0;
+            border-radius: 100px;
+            transition: $common-transition;
+            &.top {
+                top: 0;
+            }
+            &.middle {
+                top: 50%;
+                transform: translateY(-50%);
+            }
+            &.bottom {
+                top: calc(100% - 2px);
+            }
+        }
+        &.active {
+            .bar {
+                top: 50%;
+                left: 50%;
+                &.top {
+                    transform: translate(-50%,-50%) rotate(45deg);
+                }
+                &.middle {
+                    transform: translate(-50%,-50%) rotate(45deg);
+                }
+                &.bottom {
+                    transform: translate(-50%,-50%) rotate(-45deg);
+                }
+            }
+        }
+    }
 }
 
 main {
@@ -109,7 +148,7 @@ main {
             letter-spacing: -0.1em;
         }
         small {
-            font-size: 20px;
+            font-size: 16px;
             transform: translateY(010px);
         }
         br {
@@ -257,7 +296,7 @@ main {
 .trouble {
     padding: 4.77vw 0 15vw;
     position: relative;
-    background-image: url(../img/trouble_bg.png);
+    background-image: url(../img/trouble_bg_v2.png);
     background-position: center center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -372,6 +411,7 @@ main {
     background-repeat: no-repeat;
     background-attachment: fixed;
     transition: $common-transition;
+    position: relative;
     &_title {
         text-align: center;
         position: relative;
@@ -400,6 +440,10 @@ main {
                 font-size: 56px;
                 font-weight: 600;
                 color: $main-red;
+                >div {
+                    display: inline-block;
+                    letter-spacing: -0.2em;
+                }
                 span {
                     font-size: 36px;
                     color: #000;
@@ -408,6 +452,10 @@ main {
             h2 {
                 font-size: 42px;
                 font-weight: 600;
+                >div {
+                    display: inline-block;
+                    letter-spacing: -0.2em;
+                }
             }
         }
     }
@@ -517,7 +565,7 @@ main {
         }
     }
     &.bg1 {
-        background-image: url(../img/feature-bg-2.png), url(../img/feature-bg-1.png);
+        background-image: url(../img/feature-bg-2_v2.png), url(../img/feature-bg-1_v2.png);
         background-position: 0 bottom, right 0;
         background-size: 26.61vw, 32.07vw;
     }
@@ -526,10 +574,36 @@ main {
         background-position: 0 0, right bottom;
         background-size: 32.07vw, 26.61vw;
     }
+    &-bg {
+        z-index: -1;
+        // display: none;
+        &-left {
+            position: fixed;
+            width: 35vw;
+            left: 0;
+            bottom: 0;
+            opacity: 0;
+            transition: $common-transition;
+            &.active {
+                opacity: 1;
+            }
+        }
+        &-right {
+            position: fixed;
+            width: 45vw;
+            right: 0;
+            top: 0;
+            opacity: 0;
+            transition: $common-transition;
+            &.active {
+                opacity: 1;
+            }
+        }
+    }
 }
 
 .work {
-    background-image: url(../img/works_bg.png);
+    background-image: url(../img/works_bg_v2.png);
     background-position: center top;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -602,7 +676,7 @@ main {
     padding-top: 10.88vw;
     padding-bottom: 2.23vw;
     padding-left: 10.91vw;
-    background-image: url(../img/customer_bg.png);
+    background-image: url(../img/customer_bg_v2.png);
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: right 0;
@@ -720,7 +794,7 @@ main {
 .flow {
     margin-top: 250px;
     padding: 5.57vw 10.91vw 2.32vw;
-    background-image: url(../img/flow-bg.png);
+    background-image: url(../img/flow-bg_v2.png);
     background-position: -40px bottom;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -762,7 +836,8 @@ main {
         &.flow2 {
             img {
                 width: 50%;
-                margin: 5px auto;
+                margin: 0 auto;
+                transform: translateY(-7px);
             }
         }
     }
@@ -801,7 +876,7 @@ main {
 
 .qa {
     margin-top: 250px;
-    background-image: url(../img/qa-bg-left.png), url(../img/qa-bg-right.png);
+    background-image: url(../img/qa-bg-left_v2.png), url(../img/qa-bg-right_v2.png);
     background-size: 29.55%, 47.19%;
     background-position: 0 bottom, right 0;
     background-repeat: no-repeat;
@@ -900,7 +975,7 @@ main {
 
 .place {
     padding-top: 11.35vw;
-    background-image: url(../img/place-bg-left.png), url(../img/place-bg-right.png);
+    background-image: url(../img/place-bg-left_v2.png), url(../img/place-bg-right.png);
     background-size: 28.97vw, 35.1vw;
     background-repeat: no-repeat;
     background-position: 0 0, right 0;
@@ -967,11 +1042,11 @@ main {
             margin: 0;
         }
         &_phone {
-            // margin-top: 10px;
-            color: $main-red;
+            color: $main-red !important;
             font-size: 46px;
             font-weight: bold;
             margin: 0;
+            text-decoration: none;
         }
         &_inform {
             margin: 0;
@@ -982,7 +1057,7 @@ main {
 .contact {
     padding-top: 150px;
     padding-bottom: 100px;
-    background-image: url(../img/contact-bg.png);
+    background-image: url(../img/contact-bg_v2.png);
     background-size: 43.54%;
     background-position: 0 bottom;
     background-repeat: no-repeat;
@@ -1082,7 +1157,7 @@ main {
 
 .footer {
     background-color: #eeeeee;
-    padding: 40px 0 150px;
+    padding: 40px 0 20px;
     img {
         width: 200px;
     }
@@ -1111,6 +1186,14 @@ main {
                 }
             }
         }
+    }
+    &_copyright {
+        text-align: center;
+        margin: 0;
+        width: 100%;
+        margin-top: 130px;
+        font-size: 14px;
+        font-weight: 500;
     }
 }
 
@@ -1184,6 +1267,9 @@ main {
                 text-align: center;
                 margin: 0 0 15px;
             }
+        }
+        &_copyright {
+            margin-top: 40px;
         }
     }
 }
@@ -1259,12 +1345,51 @@ main {
         padding-left: 40px;
         padding-right: 40px;
         background-size: cover;
+        background-position: -100px bottom;
     }
     .place {
+        padding-bottom: 0;
         &_item {
             &_phone {
                 font-size: 42px;
             }
+        }
+    }
+    .header {
+        &_nav {
+            position: fixed;
+            width: 100vw;
+            height: calc(100vh - 60px);
+            background-color: #fff;
+            top: 60px;
+            // right: 0;
+            left: 100%;
+            padding-top: 70px;
+            overflow-y: auto;
+            transition: $common-transition;
+            li {
+                text-align: center;
+                width: fit-content;
+                margin: 13px auto 0;
+                &:first-child {
+                    margin: 0 auto;
+                }
+            }
+            &.active {
+                left: 0;
+            }
+        }
+    }
+    .kv {
+        &_btn {
+            width: 350px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        &_link {
+            margin: 0 auto;
+            display: block;
+            text-align: center;
         }
     }
 }
@@ -1283,7 +1408,6 @@ main {
 }
 
 @media screen and (max-width:767px) {
-    
     .kv {
         h1 {
             font-size: 32px;
@@ -1398,6 +1522,7 @@ main {
     }
 
     .feature {
+        background-image: none !important;
         &_content {
             margin-top: 30px;
         }
@@ -1424,6 +1549,7 @@ main {
                 }
             }
             &Box {
+                padding: 75px 0;
                 &#feat-atte {
                     .feature_item_pic {
                         img {
@@ -1460,7 +1586,7 @@ main {
             }
         }
         &.bg1 {
-            background-image: url(../img/feature-bg-2-m.png), url(../img/feature-bg-1-m.png);
+            background-image: url(../img/feature-bg-2-m_v2.png), url(../img/feature-bg-1-m_v2.png);
             background-size: 35vw, 45vw;
         }
         &.bg2 {
@@ -1470,8 +1596,8 @@ main {
     }
 
     .contact {
-        padding-top: 30px;
-        background-image: url(../img/contact-bg-m.png);
+        // padding-top: 30px;
+        background-image: url(../img/contact-bg-m_v2.png);
         background-position: center top;
         background-size: contain;
         &_form {
@@ -1500,7 +1626,7 @@ main {
     }
 
     .customer {
-        background-image: url(../img/customer_bg-m.png);
+        background-image: url(../img/customer_bg-m_v2.png);
         padding-top: 26.25vw;
         padding-left: 6.25vw;
         padding-bottom: 26.25vw;
@@ -1516,7 +1642,9 @@ main {
     }
 
     .service {
-        padding-top: 150px;
+        padding-top: 200px;
+        margin-top: 0;
+        background-image: none;
         &_content {
             padding: 0;
         }
@@ -1536,11 +1664,12 @@ main {
     }
 
     .flow {
-        background-image: url(../img/flow-bg-m.png);
+        background-image: url(../img/flow-bg-m_v2.png);
         background-position: 0 0;
-        padding-bottom: 65.25vw;
+        padding-bottom: 30vw;
         padding-top: 11.88vw;
         margin-top: 100px;
+        background-size: 85%;
         &_content {
             max-width: 450px;
             width: 100%;
@@ -1572,16 +1701,17 @@ main {
         }
     }
     .qa {
-        background-image: url(../img/qa-bg-m.png);
+        background-image: url(../img/qa-bg-m_v2.png);
         background-size: 100%;
         background-position: center 0;
         background-repeat: no-repeat;
         padding-bottom: 44vw;
+        margin-top: 50px;
     }
 
     .place {
         padding-top: 45vw;
-        background-image: url(../img/place-bg-top-m.png), url(../img/place-bg-bottom-m.png);
+        background-image: url(../img/place-bg-top-m_v2.png), url(../img/place-bg-bottom-m_v2.png);
         background-size: 100%, 100%;
         background-position: center 0, center bottom;
         &_item {
@@ -1602,6 +1732,9 @@ main {
                 font-size: 90px;
             }
         }
+    }
+    .flow {
+        background-size: 95%;
     }
 }
 
@@ -1667,6 +1800,7 @@ main {
         }
     }
     .contact {
+        padding-top: 75px;
         &_title {
             .title-en {
                 font-size: 70px;
@@ -1690,7 +1824,7 @@ main {
         }
     }
     .work {
-        background-image: url(../img/works_bg-m.png);
+        background-image: url(../img/works_bg-m_v2.png);
         &_item {
             margin-bottom: 20px;
             p {
@@ -1712,6 +1846,7 @@ main {
         }
     }
     .service {
+        padding-top: 150px;
         &_title {
             img {
                 width: 73%;
@@ -1724,6 +1859,7 @@ main {
     .flow {
         padding-left: 20px;
         padding-right: 20px;
+        background-size: 110%;
         .title-common {
             margin-bottom: 40px;
         }
@@ -1805,6 +1941,9 @@ main {
             margin-top: 30px;
         }
     }
+    .flow {
+        background-size: 120%;
+    }
 }
 
 @media screen and (max-width:500px) {
@@ -1870,9 +2009,12 @@ main {
     }
     .customer {
         &_item {
-            height: 400px;
+            height: 340px;
             padding-top: 20px;
             padding-bottom: 20px;
+            >p {
+                font-size: 14px;
+            }
         }
     }
     .service {
@@ -1897,6 +2039,12 @@ main {
         h1 {
             font-size: 24px;
         }
+        &_btn {
+            width: 300px;
+        }
+    }
+    .flow {
+        background-size: 130%;
     }
 }
 
@@ -1914,7 +2062,7 @@ main {
             margin-bottom: 10px;
         }
         &_btn {
-            width: 200px;
+            // width: 200px;
         }
     }
     .trouble {
@@ -1961,6 +2109,7 @@ main {
         }
     }
     .customer {
+        padding-bottom: 0;
         .title-common {
             margin-bottom: 25px;
         }
@@ -1985,6 +2134,12 @@ main {
             }
         }
     }
+    .service {
+        padding-top: 100px;
+    }
+    .flow {
+        background-size: 140%;
+    }
 }
 
 @media screen and (max-width:400px) {
@@ -2000,5 +2155,8 @@ main {
         &_intro {
             font-size: 20px;
         }
+    }
+    .flow {
+        background-size: 150%;
     }
 }

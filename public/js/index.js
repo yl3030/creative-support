@@ -20,6 +20,26 @@ $(window).on("scroll resize", function(){
     //     $(".feature").removeClass("bg1").addClass("bg2");
     // }
 
+    if($(window).width()<768){
+        let featureTopM = $("#feature").offset().top - $(window).height();
+        let featureTopM2 = $("#feature").offset().top;
+        let featureBottomM = $("#feature").offset().top + $("#feature").height();
+        if($(window).scrollTop()>=featureTopM && $(window).scrollTop()<featureBottomM){
+            $(".feature-bg-right").addClass("active");
+        }else {
+            $(".feature-bg-right").removeClass("active");
+        }
+    
+        if($(window).scrollTop()>=featureTopM2 && $(window).scrollTop()<featureBottomM){
+            $(".feature-bg-left").addClass("active");
+        }else {
+            $(".feature-bg-left").removeClass("active");
+        }
+    }else {
+        $(".feature-bg").removeClass("active");
+    }
+
+
 
     let featureTop = $("#feature").offset().top - 71;
     let featureBottom = featureTop + $("#feature").height();
@@ -119,4 +139,29 @@ $(".gotoelement").click(function(){
     let top = $(target).offset().top - 70;
     $("html, body").animate({scrollTop:top},300);
     $(this).addClass("active");
+})
+
+// menu
+$(".header_menu").click(function(){
+    if($(this).hasClass("active")){
+        $(this).removeClass("active");
+        $(".header_nav").removeClass("active");
+        $("body").css("overflow","visible");
+    }else {
+        $(this).addClass("active");
+        $(".header_nav").addClass("active");
+        $("body").css("overflow","hidden");
+    }
+
+    if(!$("header").hasClass("active")){ 
+        $("header").addClass("active");
+    }
+})
+
+$(".header_nav li").click(function(){
+    if($(window).width()<992){
+        $(".header_menu").removeClass("active");
+        $(".header_nav").removeClass("active");
+        $("body").css("overflow","visible");
+    }
 })
