@@ -24,16 +24,24 @@ $(window).on("scroll resize", function(){
         let featureTopM = $("#feature").offset().top - $(window).height();
         let featureTopM2 = $("#feature").offset().top;
         let featureBottomM = $("#feature").offset().top + $("#feature").height();
-        if($(window).scrollTop()>=featureTopM && $(window).scrollTop()<featureBottomM){
-            $(".feature-bg-right").addClass("active");
+        let featureBottomM2 = $("#feature").offset().top + $("#feature").height() - $(window).height() + 60;
+        // if($(window).scrollTop()>=featureTopM && $(window).scrollTop()){
+
+        // }
+        if($(window).scrollTop()>=featureTopM && $(window).scrollTop()<featureBottomM2){
+            $(".feature-bg-right").addClass("active").removeClass("abso");
+        }else if($(window).scrollTop()>=featureBottomM2 && $(window).scrollTop()<featureBottomM) {
+            $(".feature-bg-right").addClass("abso").addClass("active");
         }else {
-            $(".feature-bg-right").removeClass("active");
+            $(".feature-bg-right").removeClass("abso").removeClass("active");
         }
     
-        if($(window).scrollTop()>=featureTopM2 && $(window).scrollTop()<featureBottomM){
-            $(".feature-bg-left").addClass("active");
+        if($(window).scrollTop()>=featureTopM2 && $(window).scrollTop()<featureBottomM2){
+            $(".feature-bg-left").addClass("active").removeClass("abso");
+        }else if($(window).scrollTop()>=featureBottomM2 && $(window).scrollTop()<featureBottomM) {
+            $(".feature-bg-left").addClass("abso").addClass("active");
         }else {
-            $(".feature-bg-left").removeClass("active");
+            $(".feature-bg-left").removeClass("abso").removeClass("active");
         }
     }else {
         $(".feature-bg").removeClass("active");

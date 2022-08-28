@@ -407,7 +407,7 @@ main {
 }
 
 .feature {
-    padding: 60px 0;
+    padding: 60px 0 0;
     background-repeat: no-repeat;
     background-attachment: fixed;
     transition: $common-transition;
@@ -587,16 +587,26 @@ main {
             &.active {
                 opacity: 1;
             }
+            &.abso {
+                position: absolute;
+            }
         }
         &-right {
-            position: fixed;
+            position: absolute;
             width: 45vw;
             right: 0;
+            bottom: inherit;
             top: 0;
             opacity: 0;
             transition: $common-transition;
             &.active {
                 opacity: 1;
+                position: fixed;
+            }
+            &.abso {
+                position: absolute;
+                top: inherit;
+                bottom: 102vw;
             }
         }
     }

@@ -518,7 +518,7 @@ main {
 }
 
 .feature {
-  padding: 60px 0;
+  padding: 60px 0 0;
   background-repeat: no-repeat;
   background-attachment: fixed;
   -webkit-transition: 0.5s ease-in-out;
@@ -716,10 +716,15 @@ main {
   opacity: 1;
 }
 
+.feature-bg-left.abso {
+  position: absolute;
+}
+
 .feature-bg-right {
-  position: fixed;
+  position: absolute;
   width: 45vw;
   right: 0;
+  bottom: inherit;
   top: 0;
   opacity: 0;
   -webkit-transition: 0.5s ease-in-out;
@@ -728,6 +733,13 @@ main {
 
 .feature-bg-right.active {
   opacity: 1;
+  position: fixed;
+}
+
+.feature-bg-right.abso {
+  position: absolute;
+  top: inherit;
+  bottom: 102vw;
 }
 
 .work {
