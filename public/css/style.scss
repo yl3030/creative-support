@@ -833,7 +833,7 @@ main {
         height: 100%;
         p {
             text-align: center;
-            font-size: 18px;
+            font-size: 20px;
             font-weight: 700;
         }
         img {
@@ -850,15 +850,21 @@ main {
             text-align: center;
             display: block;
             font-weight: 500;
-            font-size: 14px;
+            font-size: 16px;
         }
-        &.flow2 {
-            img {
-                width: 50%;
-                margin: 0 auto;
-                transform: translateY(-7px);
-            }
-        }
+        // &.flow2 {
+        //     img {
+        //         width: 40%;
+        //         margin: 0 auto;
+        //         transform: translateY(-7px);
+        //     }
+        //     >span {
+        //         position: absolute;
+        //         width: 100%;
+        //         bottom: 20px;
+        //         left: 0;
+        //     }
+        // }
     }
     &_step {
         background-color: #000;
@@ -1293,6 +1299,14 @@ main {
     }
 }
 
+@media screen and (max-width:1150px) {
+    .flow {
+        &_content {
+            padding-left: 0;
+        }
+    }
+}
+
 @media screen and (max-width:1040px) {
     .contact {
         &_title {
@@ -1365,6 +1379,11 @@ main {
         padding-right: 40px;
         background-size: cover;
         background-position: -100px bottom;
+        &_item {
+            >span {
+                font-size: 15px;
+            }
+        }
     }
     .place {
         padding-bottom: 0;
@@ -1746,6 +1765,14 @@ main {
                     display: block;
                     margin: 20px auto 0;
                 }
+            }
+            &.flow2 {
+                >span {
+                    position: static;
+                }
+            }
+            >span {
+                font-size: 16px;
             }
         }
         .title-common {

@@ -985,7 +985,7 @@ main {
 
 .flow_item p {
   text-align: center;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 700;
 }
 
@@ -1005,14 +1005,7 @@ main {
   text-align: center;
   display: block;
   font-weight: 500;
-  font-size: 14px;
-}
-
-.flow_item.flow2 img {
-  width: 50%;
-  margin: 0 auto;
-  -webkit-transform: translateY(-7px);
-          transform: translateY(-7px);
+  font-size: 16px;
 }
 
 .flow_step {
@@ -1488,6 +1481,12 @@ main {
   }
 }
 
+@media screen and (max-width: 1150px) {
+  .flow_content {
+    padding-left: 0;
+  }
+}
+
 @media screen and (max-width: 1040px) {
   .contact_title .title-en {
     font-size: 110px;
@@ -1548,6 +1547,9 @@ main {
     padding-right: 40px;
     background-size: cover;
     background-position: -100px bottom;
+  }
+  .flow_item > span {
+    font-size: 15px;
   }
   .place {
     padding-bottom: 0;
@@ -1876,6 +1878,12 @@ main {
     width: 100%;
     display: block;
     margin: 20px auto 0;
+  }
+  .flow_item.flow2 > span {
+    position: static;
+  }
+  .flow_item > span {
+    font-size: 16px;
   }
   .flow .title-common {
     margin-bottom: 70px;
