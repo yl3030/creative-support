@@ -41,7 +41,7 @@ $(window).on("scroll resize", function(){
         }else if($(window).scrollTop()>=featureBottomM2 && $(window).scrollTop()<featureBottomM) {
             $(".feature-bg-left").addClass("abso").addClass("active");
         }else {
-            $(".feature-bg-left").removeClass("abso").removeClass("active");
+            $(".feature-bg-left").removeClass("active");
         }
     }else {
         $(".feature-bg").removeClass("active");
