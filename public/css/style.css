@@ -1416,7 +1416,7 @@ main {
   transition: 0.5s ease-in-out;
 }
 
-.footer_nav li:hover::after, .footer_nav li.active::after {
+.footer_nav li:hover::after {
   width: 100%;
 }
 
@@ -1474,7 +1474,17 @@ main {
   }
   .footer_nav li {
     text-align: center;
-    margin: 0 0 15px;
+    margin: 0 auto 15px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .footer_nav li:hover::after {
+    width: 0;
+  }
+  .footer_nav li:first-child {
+    margin-left: auto;
+    margin-right: auto;
   }
   .footer_copyright {
     margin-top: 40px;
